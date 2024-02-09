@@ -1,0 +1,232 @@
+*,::before,::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* navbar style */
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+
+    padding: 1rem 2rem;
+    width: 80%;
+    /* padding: 1rem 8rem; */
+    margin-inline: auto;
+
+    /* box-shadow: 0 0 10px rgba(128, 128, 128, 0.356); */
+}
+.header__menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.header__my-name {
+    font-size: 1.2rem;
+}
+.header__menu-items {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+.header__burger {
+    display: none;
+    width: 30px;
+}
+@media (max-width: 880px) {
+    .header__menu {
+        display: none;
+    }
+    .header__burger {
+        display: block;
+    }
+}
+@media (max-width: 720px) {
+    .header__my-name {
+        font-size: 1rem;
+    }
+    .header__burger {
+        width: 25px;
+    }
+}
+@media (max-width: 620px) {
+    .header__my-name {
+        font-size: 0.8rem;
+    }
+    .header__burger {
+        width: 18px;
+    }
+}
+@media (max-width: 570px) {
+    .header__my-name {
+        font-size: 0.6rem;
+    }
+    .header__burger {
+        width: 14px;
+    }
+}
+
+/* profile style */
+.profile {
+    width: 80%;
+    /* margin-inline: auto; */
+    margin: 10rem auto;
+    max-width: 1400px;
+    padding: 0 2rem;
+}
+.profile__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+.profile__img {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+.profile__dev {
+    font-size: 1.3rem;
+}
+.profile__img-cont {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px gray;
+    overflow: hidden;
+}
+.profile__aboutme {
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.profile__title {
+    font-size: 4rem;
+    max-width: 10ch;
+}
+.profile__description {
+    font-size: 1.2rem;
+    max-width: 50ch;
+    /* min-width: 30ch; */
+    margin: 1.5rem 0;
+}
+.profile__dev {
+    color: #008080;
+    font-weight: 600;
+}
+.profile__btn-cont {
+    display: flex;
+    gap: 0.5rem;
+}
+.btn {
+    padding: 0.8em 1.2em;
+    border: none;
+    background-color: #008080;
+    color: #fff;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+}
+@media (max-width: 880px) {
+    .profile__container {
+        flex-wrap: wrap;
+    }
+    .profile {
+        margin: 6rem auto;
+    }
+    .profile__title {
+        font-size: 2rem;
+        max-width: 15ch;
+    }
+    .profile__description {
+        font-size: 1rem;
+        align-self: center;
+        /* max-width: 30ch; */
+    }
+    .profile__dev {
+        font-size: 0.9rem;
+    }
+    .profile__img {
+        justify-content: center;
+    }
+    .profile__title {
+        align-self: center;
+    }
+    .profile__btn {
+        font-size: 1rem;
+        padding: 0.5em 1em;
+    }
+    .profile__btn-cont {
+        align-self: center;
+    }
+}
+@media (max-width: 720px) {
+    .profile {
+        margin: 4rem auto;
+    }
+    .profile__title {
+        font-size: 1.7rem;
+        max-width: 15ch;
+    }
+    .profile__description {
+        font-size: 0.8rem;
+        align-self: center;
+        /* max-width: 30ch; */
+    }
+    .profile__btn {
+        font-size: 1rem;
+        padding: 0.5em 1em;
+        align-self: center;
+    }
+}
+
+.svg-down {
+    text-align: center;
+    width: 80%;
+    margin-inline: auto;
+}
+
+/* ###### About me ####### */
+.aboutme-title {
+    text-align: center;
+    margin: 8rem auto;
+    /* max-width: 80%; */
+    max-width: 1400px;
+}
+.aboutme {
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    max-width: 1400px;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 0 2rem;
+}
+.aboutme1 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.aboutme2 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.aboutme__btn {
+    padding: 0.8em 1.2em;
+    border: none;
+    background-color: gray;
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.aboutme1 p {
+    font-size: 1.2rem;
+}
